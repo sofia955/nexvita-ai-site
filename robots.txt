@@ -1,0 +1,3 @@
+# STAGING: trocar por Allow no lançamento
+User-agent: *
+Disallow: /
