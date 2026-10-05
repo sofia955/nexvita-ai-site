@@ -158,3 +158,11 @@ footer .wrap > div{line-height:1.9}
  footer a{display:inline-block;padding:8px 0}
  .secao{padding:56px 0}
 }
+
+/* aviso de cookies */
+#nv-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:720px;margin:0 auto;background:var(--petroleo);color:#fff;border-radius:16px;padding:16px 18px;box-shadow:0 8px 32px rgba(7,56,61,.35),0 0 0 100vmax rgba(250,250,250,0) ;display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.5}
+#nv-cookies p{margin:0;flex:1 1 320px}
+#nv-cookies a{color:var(--brilho)}
+.nv-cookies-acoes{display:flex;gap:8px}
+.nv-cookies-acoes button{min-height:44px;padding:0 20px;border-radius:999px;font:600 14px var(--sans);cursor:pointer;border:1px solid #fff;background:#fff;color:var(--petroleo)}
+.nv-cookies-acoes button:focus-visible{outline:2px solid var(--brilho);outline-offset:2px}

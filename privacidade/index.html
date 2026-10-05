@@ -15,7 +15,7 @@
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/HedvigLettersSerif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
-<!-- MEDICAO: inserir aqui GA4 (gtag) e Meta Pixel após aprovação e com aviso de cookies. Nada é carregado hoje. -->
+<!-- MEDICAO: GA4 (G-KE4MM800WH) só carrega após consentimento, via assets/consent.js. Meta Pixel: não instalado. -->
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -35,7 +35,7 @@
  <h2>Quem somos</h2>
  <p>NexVita Consultoria e Gestão Ltda, CNPJ 63.708.491/0001-40, com sede em São Paulo, SP, é a controladora dos dados coletados neste site. Contato do encarregado: <a href="mailto:privacidade@nexvita.ai">privacidade@nexvita.ai</a>.</p>
  <h2>Quais dados coletamos</h2>
- <p>Nome, empresa, cargo, porte da empresa, e-mail, telefone e a descrição do processo informados no formulário, além da origem da visita (parâmetros de campanha). Quando habilitadas e com seu consentimento, ferramentas de medição de navegação.</p>
+ <p>Nome, empresa, cargo, porte da empresa, e-mail, telefone e a descrição do processo informados no formulário, além da origem da visita (parâmetros de campanha). Com seu consentimento, dados de navegação coletados pelo Google Analytics (páginas visitadas, dispositivo, região aproximada), com IP anonimizado. Você pode aceitar, recusar ou mudar a escolha a qualquer momento no link “Cookies” do rodapé.</p>
  <h2>Para que usamos</h2>
  <p>Para responder ao seu contato, preparar a conversa solicitada e medir a eficácia das nossas campanhas. Base legal: consentimento e legítimo interesse (art. 7º, I e IX, da LGPD).</p>
  <h2>Com quem compartilhamos</h2>
@@ -48,8 +48,9 @@
 </main>
 <footer><div class="wrap">
  <div>NexVita AI · unidade de inteligência artificial aplicada da NexVita<br>NexVita Consultoria e Gestão Ltda · CNPJ 63.708.491/0001-40 · São Paulo, SP</div>
- <div><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a> · <a href="../privacidade/">Privacidade</a></div>
+ <div><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a> · <a href="../privacidade/">Privacidade</a> · <a href="#" data-cookies>Cookies</a></div>
 </div></footer>
+<script src="../assets/consent.js" defer></script>
 <script src="../assets/site.js" defer></script>
 </body>
 </html>

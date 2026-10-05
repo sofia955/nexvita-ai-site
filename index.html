@@ -15,7 +15,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/HedvigLettersSerif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
-<!-- MEDICAO: inserir aqui GA4 (gtag) e Meta Pixel após aprovação e com aviso de cookies. Nada é carregado hoje. -->
+<!-- MEDICAO: GA4 (G-KE4MM800WH) só carrega após consentimento, via assets/consent.js. Meta Pixel: não instalado. -->
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -136,8 +136,9 @@
 </main>
 <footer><div class="wrap">
  <div>NexVita AI · unidade de inteligência artificial aplicada da NexVita<br>NexVita Consultoria e Gestão Ltda · CNPJ 63.708.491/0001-40 · São Paulo, SP</div>
- <div><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a> · <a href="privacidade/">Privacidade</a></div>
+ <div><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a> · <a href="privacidade/">Privacidade</a> · <a href="#" data-cookies>Cookies</a></div>
 </div></footer>
+<script src="assets/consent.js" defer></script>
 <script src="assets/site.js" defer></script>
 </body>
 </html>
