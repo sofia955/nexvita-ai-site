@@ -166,3 +166,13 @@ footer .wrap > div{line-height:1.9}
 .nv-cookies-acoes{display:flex;gap:8px}
 .nv-cookies-acoes button{min-height:44px;padding:0 20px;border-radius:999px;font:600 14px var(--sans);cursor:pointer;border:1px solid #fff;background:#fff;color:var(--petroleo)}
 .nv-cookies-acoes button:focus-visible{outline:2px solid var(--brilho);outline-offset:2px}
+
+/* WhatsApp */
+.nv-wa{position:fixed;right:20px;bottom:24px;z-index:40;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px 0 16px;border-radius:999px;background:#fff;color:var(--petroleo);text-decoration:none;font:600 15px var(--sans);border:1px solid var(--linha);box-shadow:0 6px 20px rgba(7,56,61,.28);transition:opacity .2s,transform .2s}
+.nv-wa svg{color:#1f9e5a}
+.nv-wa:hover{background:#eef5f3}
+.nv-wa:focus-visible{outline:2px solid var(--brilho);outline-offset:3px}
+.nv-wa.oculto{opacity:0;transform:translateY(12px);pointer-events:none}
+@media (max-width:560px){.nv-wa span{display:none}.nv-wa{padding:0;width:56px;justify-content:center}}
+.nv-wa-alt{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:600;color:var(--petroleo);text-decoration:underline;text-underline-offset:3px}
+footer{padding-bottom:96px}
