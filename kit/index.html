@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Kit de posts — semana 1</title>
+<style>
+body{margin:0;font:16px/1.5 -apple-system,system-ui,sans-serif;background:#fafafa;color:#141414}
+main{max-width:560px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:#636363;margin:0 0 24px;font-size:14px}
+section{background:#fff;border:1px solid #dbdbdb;border-radius:14px;padding:16px;margin-bottom:20px}
+h2{font-size:18px;margin:0 0 4px;color:#07383d}
+.dica{font-size:14px;color:#636363;margin:0 0 12px}
+img{width:100%;border-radius:8px;display:block;margin-bottom:10px}
+pre{white-space:pre-wrap;font:15px/1.5 -apple-system,system-ui,sans-serif;background:#f3f6f5;border-radius:8px;padding:12px;margin:0 0 10px}
+button{width:100%;min-height:48px;border:0;border-radius:999px;background:#07383d;color:#fff;font:600 16px -apple-system,system-ui,sans-serif}
+button.ok{background:#1f9e5a}
+</style>
+</head>
+<body>
+<main>
+<h1>Posts da semana 1</h1>
+<p class="sub">Para cada post: segure o dedo na imagem → Salvar em Fotos. Depois toque em "Copiar legenda" e cole no Instagram.</p>
+
+<section>
+<h2>Post 1 — carrossel (3 imagens)</h2>
+<p class="dica">No Instagram, escolha as 3 imagens nesta ordem: 1, 2, 3.</p>
+<img src="3_sex_carrossel_1.jpg" alt="Carrossel 1 de 3">
+<img src="3_sex_carrossel_2.jpg" alt="Carrossel 2 de 3">
+<img src="3_sex_carrossel_3.jpg" alt="Carrossel 3 de 3">
+<pre id="l1">8 processos que costumam render primeiro com IA em empresas médias. Nenhum exige trocar de sistema: a IA entra no que a equipe já usa.
+
+Qual deles toma mais tempo aí? Responda nos comentários.
+
+nexvita.ai</pre>
+<button data-c="l1">Copiar legenda</button>
+</section>
+
+<section>
+<h2>Post 2 — dado de mercado</h2>
+<img src="2_qua_dado.jpg" alt="Dado de mercado">
+<pre id="l2">32% das empresas médias brasileiras já usam inteligência artificial. Entre as grandes, 50% (Cetic.br, TIC Empresas 2025).
+
+Entre as que ainda não usam, o motivo citado antes do custo é não saber qual solução serve para a própria operação. É por aí que começamos: um diagnóstico do processo, antes de qualquer ferramenta.
+
+nexvita.ai/diagnostico</pre>
+<button data-c="l2">Copiar legenda</button>
+</section>
+
+<section>
+<h2>Post 3 — manifesto (por último)</h2>
+<img src="1_seg_manifesto.jpg" alt="Manifesto">
+<pre id="l3">A maior parte dos projetos de IA não para por falta de tecnologia. Para porque começa grande demais, sem medida de antes e sem ninguém responsável depois da entrega.
+
+A NexVita AI trabalha ao contrário: um processo, uma métrica, uma entrega em semanas. E seguimos operando a solução depois de entregar.
+
+nexvita.ai</pre>
+<button data-c="l3">Copiar legenda</button>
+</section>
+</main>
+<script>
+document.querySelectorAll("button[data-c]").forEach(function(b){
+  b.addEventListener("click",function(){
+    var t=document.getElementById(b.dataset.c).textContent;
+    function feito(){b.textContent="Copiada";b.className="ok";setTimeout(function(){b.textContent="Copiar legenda";b.className=""},2000)}
+    if(navigator.clipboard){navigator.clipboard.writeText(t).then(feito)}else{var r=document.createRange();r.selectNode(document.getElementById(b.dataset.c));getSelection().removeAllRanges();getSelection().addRange(r);document.execCommand("copy");feito()}
+  });
+});
+</script>
+</body>
+</html>

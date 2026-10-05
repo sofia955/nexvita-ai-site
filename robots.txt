@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://nexvita.ai/sitemap.xml
+Disallow: /kit/
