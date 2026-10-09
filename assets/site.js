@@ -1,6 +1,5 @@
 /* NexVita AI — formulário e atribuição de campanha.
-   Enquanto não houver endpoint configurado, o envio abre o e-mail do visitante (mailto).
-   Para ligar a um receptor real, defina data-endpoint no <form> (POST JSON). */
+   Envio via FormSubmit (ativado em 09/10/2026) para mori@nexvita.com. data-endpoint no <form> sobrescreve. */
 (function(){
   var KEYS=["utm_source","utm_medium","utm_campaign","utm_term","utm_content","gclid","fbclid","li_fat_id"];
   var qs=new URLSearchParams(location.search), saved={};
@@ -17,7 +16,9 @@
       if(!f.reportValidity())return;
       var d={};new FormData(f).forEach(function(v,k){if(k!=="website")d[k]=v});
       d.oferta=f.dataset.oferta||"geral";d.atribuicao=saved;d.pagina=location.href;
-      var ep=f.dataset.endpoint;
+      var ep=f.dataset.endpoint||"https://formsubmit.co/ajax/mori@nexvita.com";
+      d._subject="Lead site NexVita AI ("+d.oferta+") — "+(d.empresa||"");d._template="table";d._captcha="false";
+      d.atribuicao=JSON.stringify(saved);
       function ok(){st.className="status ok";st.textContent="Recebido. Respondemos em até um dia útil.";f.reset();
         if(window.gtag)gtag("event","generate_lead",{oferta:d.oferta});
         if(window.fbq)fbq("track","Lead",{content_name:d.oferta});}
@@ -27,8 +28,8 @@
         ok();return;
       }
       st.className="status";st.textContent="Enviando…";
-      fetch(ep,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)})
-        .then(function(r){if(!r.ok)throw 0;ok()})
+      fetch(ep,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(d)})
+        .then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){if(j&&String(j.success)==="false")throw 0;ok()})
         .catch(function(){st.className="status erro";st.textContent="Não foi possível enviar. Escreva para contato@nexvita.ai."});
     });
   });
