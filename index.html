@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <script>/* anúncio Meta antigo aponta para a home: leva à página sob medida */(function(){try{var q=new URLSearchParams(location.search);if(q.get("utm_campaign")==="nvai_trafego_sp"){q.set("utm_campaign","nvai_sob_medida");location.replace("/sob-medida/?"+q.toString());}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>if("IntersectionObserver" in window)document.documentElement.classList.add("js")</script>
 <title>NexVita AI — IA aplicada à operação de empresas médias</title>
 <meta name="description" content="Automatizamos processos manuais de vendas, atendimento e back-office com IA integrada aos seus sistemas. Implantamos, operamos e medimos o resultado.">
 <link rel="canonical" href="https://nexvita.ai/">
@@ -12,10 +13,14 @@
 <meta property="og:url" content="https://nexvita.ai/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta name="theme-color" content="#07383d">
+<meta property="og:image" content="https://nexvita.ai/assets/img/escritorio_sp.jpg">
+<meta name="theme-color" content="#0B2B29">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/HedvigLettersSerif.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="preload" href="assets/img/escritorio_sp.jpg" as="image">
+<link rel="stylesheet" href="assets/site.css?v=20261014">
 <!-- MEDICAO: GA4 (G-KE4MM800WH) só carrega após consentimento, via assets/consent.js. Meta Pixel: não instalado. -->
 </head>
 <body>
@@ -31,63 +36,111 @@
 </div></header>
 <main>
 
-<section class="abre"><div class="wrap grid">
+<section class="hero"><div class="wrap">
  <div>
-  <h1>Sua equipe faz mais. Sem&nbsp;contratar para cada novo volume.</h1>
-  <p class="lead">A NexVita AI coloca inteligência artificial dentro dos processos que hoje dependem de digitação, conferência e resposta manual. Integramos aos sistemas que a empresa já usa, operamos a&nbsp;solução e medimos o resultado todo mês.</p>
-  <div class="acoes"><a class="btn" href="#conversa">Mapear um processo</a><a class="link" href="#como">Como trabalhamos</a></div>
+  <div class="eyebrow rv">IA aplicada à operação</div>
+  <h1 class="rv d1">Sua equipe faz mais. Sem contratar para cada <em>novo volume.</em></h1>
+  <p class="lead rv d2">Colocamos inteligência artificial dentro dos processos que hoje dependem de digitação, conferência e resposta manual. Integramos aos sistemas que a empresa já usa, operamos a solução e medimos o resultado todo mês.</p>
+  <ul class="selos rv d3"><li>Pronta em até 15 dias</li><li>Preço fechado</li><li>Sem trocar de sistema</li></ul>
+  <div class="acoes rv d4">
+   <a class="btn" href="#conversa">Mapear um processo</a>
+   <a class="btn-wa" data-wa="hero" href="https://wa.me/5511948818000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20NexVita%20AI%20(inicio)%20e%20quero%20conversar%20sobre%20um%20processo%20da%20minha%20empresa." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5v-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>Falar no WhatsApp</a>
+  </div>
  </div>
- <aside>
-  <p><strong>Para empresas médias</strong>De 50 a 1.000 funcionários, com processos que cresceram mais rápido que a equipe.</p>
-  <p><strong>Integrado, não paralelo</strong>Conectado a ERP, CRM, WhatsApp e e-mail. Nada de mais uma tela para alimentar.</p>
-  <p><strong>Operado por nós</strong>Monitoramos, ajustamos e respondemos pelo funcionamento depois da entrega.</p>
- </aside>
+ <div class="hero-foto">
+  <div class="moldura" data-parallax="0.05"><img src="assets/img/escritorio_sp.jpg" width="1600" height="1066" alt="Escritório de empresa média em São Paulo no fim da tarde" fetchpriority="high"></div>
+  <div class="flutua f2"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Boletos lançados no ERP</b><small>Conferência só nas exceções</small><span class="tag">Exemplo</span></span></div>
+  <div class="flutua f1"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></span><span><b>Orçamento respondido</b><small>Registrado no CRM</small><span class="tag">Exemplo</span></span></div>
+ </div>
 </div></section>
 
-<div class="entalhe" aria-hidden="true"></div>
-<section class="escuro secao"><div class="wrap">
- <h2>Três frentes.<br><span class="acento">Um processo de cada vez.</span></h2>
- <div class="frentes">
-  <a class="frente" href="whatsapp/">
-   <span class="rot">Atendimento e vendas</span>
-   <div><h3>WhatsApp que responde, qualifica e agenda</h3><p>Primeira resposta em segundos, qualificação com as perguntas do seu time comercial, registro no CRM e passagem para um vendedor no momento certo.</p></div>
-   <span class="seta" aria-hidden="true">→</span>
-  </a>
-  <a class="frente" href="backoffice/">
-   <span class="rot">Back-office</span>
-   <div><h3>Documentos, financeiro e fiscal sem redigitação</h3><p>Leitura de notas, boletos e contratos, lançamento no ERP, conciliação e cobrança, com conferência humana onde o risco pede.</p></div>
-   <span class="seta" aria-hidden="true">→</span>
-  </a>
-  <a class="frente" href="diagnostico/">
-   <span class="rot">Diagnóstico</span>
-   <div><h3>Diagnóstico de IA com entrega em 30 dias</h3><p>Mapeamos três processos, estimamos o ganho de cada um e colocamos o&nbsp;primeiro em funcionamento.</p></div>
-   <span class="seta" aria-hidden="true">→</span>
-  </a>
+<div class="faixa"><div class="wrap">
+ <div class="item rv"><span class="num"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span><span><strong>Para empresas médias</strong>Com processos que cresceram mais rápido que a equipe.</span></div>
+ <div class="item rv d1"><span class="num"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></svg></span><span><strong>Integrado, não paralelo</strong>ERP, CRM, WhatsApp e e-mail. Nada de mais uma tela.</span></div>
+ <div class="item rv d2"><span class="num"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><span><strong>Operado por nós</strong>Monitoramos e respondemos pelo funcionamento.</span></div>
+</div></div>
+
+<section class="secao"><div class="wrap">
+ <div class="secao-topo">
+  <div class="eyebrow rv">O que fazemos</div>
+  <h2 class="rv d1">Quatro frentes. Um processo de cada vez.</h2>
  </div>
+ <div class="frentes">
+  <a class="frente destaque rv" href="sob-medida/"><img src="assets/img/copiando.jpg" width="1000" height="1500" alt="" loading="lazy" decoding="async"><span class="seta" aria-hidden="true">→</span><span class="rot">Automação sob medida</span><h3>Chega de pagar por sistema que a sua equipe não usa</h3><p>Uma automação só para a sua rotina, pronta em até 15 dias e com preço fechado.</p></a>
+  <a class="frente rv d1" href="whatsapp/"><img src="assets/img/whatsapp_planilha.jpg" width="1600" height="1066" alt="" loading="lazy" decoding="async"><span class="seta" aria-hidden="true">→</span><span class="rot">Atendimento e vendas</span><h3>WhatsApp que responde, qualifica e agenda</h3><p>Primeira resposta em segundos, registro no CRM e passagem para um vendedor no momento certo.</p></a>
+  <a class="frente rv d2" href="backoffice/"><img src="assets/img/contas_pagar.jpg" width="1600" height="1066" alt="" loading="lazy" decoding="async"><span class="seta" aria-hidden="true">→</span><span class="rot">Back-office</span><h3>Documentos, financeiro e fiscal sem redigitação</h3><p>Notas, boletos e contratos lidos e lançados no ERP, com conferência humana onde o risco pede.</p></a>
+  <a class="frente largo rv d3" href="diagnostico/"><img src="assets/img/conversa_processo.jpg" width="1600" height="1066" alt="" loading="lazy" decoding="async"><span class="seta" aria-hidden="true">→</span><span class="rot">Diagnóstico</span><h3>Diagnóstico de IA com entrega em 30 dias</h3><p>Mapeamos três processos, estimamos o ganho de cada um e colocamos o primeiro em funcionamento.</p></a>
+ </div>
+</div></section>
+
+<section class="secao" style="background:var(--bege-2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)"><div class="wrap">
+ <div class="secao-topo">
+  <div class="eyebrow rv">Antes → depois</div>
+  <h2 class="rv d1">A mensagem chega. A planilha se preenche.</h2>
+  <p class="rv d2">Um exemplo simples: o pedido que o cliente manda no WhatsApp vira uma linha organizada, com status, sem ninguém copiar e colar.</p>
+ </div>
+ <div class="demo rv" aria-label="Animação de exemplo: pedido do WhatsApp virando linha de planilha">
+  <div class="tela">
+   <div class="tela-topo"><span class="av verde">PB</span><span>Padaria Bela Vista<small>WhatsApp da empresa</small></span></div>
+   <div class="chat">
+    <div class="bolha b1">Bom dia! Quero 12 caixas do café 500 g, entrega na quinta.<time>08:12</time></div>
+    <div class="bolha digitando b2" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="bolha b3">Pode faturar no mesmo cadastro do último pedido.<time>08:13</time></div>
+   </div>
+  </div>
+  <div class="seta-demo" aria-hidden="true">→</div>
+  <div class="tela">
+   <div class="tela-topo"><span class="av"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></span><span>Pedidos da semana<small>Planilha da equipe · atualizada sozinha</small></span></div>
+   <div class="planilha-wrap"><table class="planilha">
+    <thead><tr><th>Hora</th><th>Cliente</th><th>Item</th><th>Qtd</th><th>Entrega</th><th>Status</th></tr></thead>
+    <tbody>
+     <tr><td>07:40</td><td>Mercado Sol</td><td>Café 1 kg</td><td>6</td><td>ter</td><td><span class="st">Separado</span></td></tr>
+     <tr><td>07:58</td><td>Empório Ramos</td><td>Filtro 103</td><td>20</td><td>qua</td><td><span class="st">Separado</span></td></tr>
+     <tr class="nova"><td>08:12</td><td>Padaria Bela Vista</td><td>Café 500 g</td><td>12</td><td>qui</td><td><span class="st novo">Novo</span></td></tr>
+    </tbody>
+   </table></div>
+  </div>
+ </div>
+ <p class="demo-nota"><span class="selo-ex">Exemplo</span> Ilustração com dados fictícios.</p>
 </div></section>
 
 <section class="secao" id="como"><div class="wrap">
- <h2>Como trabalhamos</h2>
- <div class="metodo">
-  <div class="passo"><div class="quando">Semanas 1 e 2</div><h3>Mapear</h3><p>Acompanhamos o processo como ele é feito hoje: volume, tempo, erros, sistemas envolvidos. Definimos a métrica que vai provar o ganho.</p></div>
-  <div class="passo"><div class="quando">Semanas 3 e 4</div><h3>Implantar</h3><p>Construímos a automação integrada aos seus sistemas, testamos com casos reais e definimos onde uma pessoa revisa antes de seguir.</p></div>
-  <div class="passo"><div class="quando">Todo mês</div><h3>Operar e medir</h3><p>Acompanhamos a operação, corrigimos desvios e entregamos um relatório com o que foi automatizado e quanto tempo voltou para a equipe.</p></div>
+ <div class="secao-topo">
+  <div class="eyebrow rv">Como trabalhamos</div>
+  <h2 class="rv d1">Mapear, implantar, operar.</h2>
+ </div>
+ <div class="passos">
+  <span class="linha-passos" aria-hidden="true"></span>
+  <div class="passo rv"><span class="num">01</span><div class="quando">Semanas 1 e 2</div><h3>Mapear</h3><p>Acompanhamos o processo como ele é feito hoje: volume, tempo, erros, sistemas envolvidos. Definimos a métrica que vai provar o ganho.</p></div>
+  <div class="passo rv d1"><span class="num">02</span><div class="quando">Semanas 3 e 4</div><h3>Implantar</h3><p>Construímos a automação integrada aos seus sistemas, testamos com casos reais e definimos onde uma pessoa revisa antes de seguir.</p></div>
+  <div class="passo rv d2"><span class="num">03</span><div class="quando">Todo mês</div><h3>Operar e medir</h3><p>Acompanhamos a operação, corrigimos desvios e entregamos um relatório com o que foi automatizado e quanto tempo voltou para a equipe.</p></div>
  </div>
 </div></section>
 
-<section class="secao" style="padding-top:0"><div class="wrap duas">
- <div><h2>O que não fazemos</h2><p class="muted" style="margin-top:18px">A maior parte dos projetos de IA para porque começa grande demais ou fica desconectada da operação. Evitamos isso por desenho.</p></div>
+<section class="faixa-foto">
+ <img src="assets/img/etiquetas_envio.jpg" width="1600" height="1066" alt="" loading="lazy" decoding="async" data-parallax="0.1">
+ <div class="wrap">
+  <blockquote class="rv">A maior parte dos projetos de IA trava porque começa grande demais. <span>Nós começamos por um processo.</span></blockquote>
+  <p class="rv d1">E ficamos responsáveis pelo funcionamento depois da entrega.</p>
+ </div>
+</section>
+
+<section class="secao"><div class="wrap duas">
+ <div><div class="eyebrow rv">Princípios</div><h2 class="rv d1">O que não fazemos</h2><p class="muted rv d2" style="margin-top:18px">A maior parte dos projetos de IA para porque começa grande demais ou fica desconectada da operação. Evitamos isso por desenho.</p></div>
  <ul class="principios">
-  <li><strong>Piloto sem métrica</strong><span>Todo projeto começa com uma medida de&nbsp;antes e um alvo de depois. Sem isso, não começamos.</span></li>
-  <li><strong>Projeto que vira gaveta</strong><span>Entregamos em semanas, não em trimestres, e continuamos responsáveis pelo funcionamento.</span></li>
-  <li><strong>Robô sem saída humana</strong><span>Clientes e equipe sempre conseguem chegar a uma pessoa. Decisões sensíveis passam por revisão.</span></li>
-  <li><strong>Dados fora de controle</strong><span>Acesso mínimo, registro do que a IA fez e tratamento de dados conforme a LGPD.</span></li>
+  <li class="rv"><strong>Piloto sem métrica</strong><span>Todo projeto começa com uma medida de antes e um alvo de depois. Sem isso, não começamos.</span></li>
+  <li class="rv d1"><strong>Projeto que vira gaveta</strong><span>Entregamos em semanas, não em trimestres, e continuamos responsáveis pelo funcionamento.</span></li>
+  <li class="rv d2"><strong>Robô sem saída humana</strong><span>Clientes e equipe sempre conseguem chegar a uma pessoa. Decisões sensíveis passam por revisão.</span></li>
+  <li class="rv d3"><strong>Dados fora de controle</strong><span>Acesso mínimo, registro do que a IA fez e tratamento de dados conforme a LGPD.</span></li>
  </ul>
 </div></section>
 
 <section class="secao" style="padding-top:0"><div class="wrap">
- <h2>Processos que costumam render primeiro</h2>
- <ul class="processos">
+ <div class="secao-topo">
+  <div class="eyebrow rv">Por onde começar</div>
+  <h2 class="rv d1">Processos que costumam render primeiro</h2>
+ </div>
+ <ul class="processos rv d1">
   <li><b>Resposta a orçamentos</b> recebidos por WhatsApp e e-mail</li>
   <li><b>Qualificação de leads</b> e registro no CRM</li>
   <li><b>Confirmação e lembrete</b> de agendamentos e entregas</li>
@@ -100,23 +153,28 @@
 </div></section>
 
 <section class="secao" style="padding-top:0"><div class="wrap duas">
- <div><h2>Perguntas frequentes</h2></div>
- <div>
+ <div><div class="eyebrow rv">Dúvidas</div><h2 class="rv d1">Perguntas frequentes</h2></div>
+ <div class="rv d1">
   <details><summary>Preciso trocar meus sistemas?</summary><p>Não. Trabalhamos sobre o ERP, o CRM e os canais que a empresa já usa. Quando um sistema não oferece integração, avaliamos alternativas antes de propor qualquer mudança.</p></details>
-  <details><summary>Isso significa reduzir a equipe?</summary><p>Significa que a equipe deixa de gastar horas com tarefas repetitivas. A maioria dos clientes usa o ganho para absorver crescimento sem novas contratações e para colocar pessoas em atividades de mais valor.</p></details>
+  <details><summary>Isso significa reduzir a equipe?</summary><p>Significa que a equipe deixa de gastar horas com tarefas repetitivas, e pode usar o ganho para absorver crescimento sem novas contratações e para se dedicar a atividades de mais valor.</p></details>
   <details><summary>Quanto custa?</summary><p>Há uma implantação por processo e uma mensalidade de operação. O valor depende do volume e das integrações; apresentamos depois do diagnóstico, com a estimativa de retorno ao lado.</p></details>
   <details><summary>E se a IA errar?</summary><p>Cada processo tem limites definidos, revisão humana nos pontos de risco e registro do que foi feito. Erros são medidos e corrigidos dentro da operação mensal.</p></details>
   <details><summary>Quem está por trás?</summary><p>A NexVita AI é a unidade de inteligência artificial aplicada da NexVita, empresa de gestão e operação. Nasceu da automação da nossa própria rotina comercial e administrativa.</p></details>
  </div>
 </div></section>
 
-<div class="entalhe" aria-hidden="true"></div>
 <section class="escuro secao" id="conversa">
  <div class="wrap form-area">
-  <div>
+  <div class="form-lado">
+   <div class="eyebrow">Fale com a gente</div>
    <h2>Comece por um processo.</h2>
    <p class="muted" style="margin-top:20px;font-size:18px">Conte qual tarefa mais consome a sua equipe. Respondemos com uma primeira leitura de como ela pode ser automatizada.</p>
-   <p class="muted small" style="margin-top:28px">Respondemos em até um dia útil. Sem apresentação genérica: a primeira conversa é sobre um processo seu.</p>
+   <p class="muted small" style="margin-top:12px">Respondemos em até um dia útil. Sem apresentação genérica: a primeira conversa é sobre um processo seu.</p>
+   <div class="contato-direto">
+    <div class="linha-c"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6z"/></svg><a data-wa="lado-form" href="https://wa.me/5511948818000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20NexVita%20AI%20(inicio)%20e%20quero%20conversar%20sobre%20um%20processo%20da%20minha%20empresa." target="_blank" rel="noopener">WhatsApp +55 11 94881-8000</a></div>
+    <div class="linha-c"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a></div>
+    <div class="linha-c"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Av. Dr. Cardoso de Melo, 1450<br>Vila Olímpia, São Paulo, SP</span></div>
+   </div>
   </div>
   <form class="contato" data-oferta="geral" novalidate>
    <div class="campos">
@@ -137,10 +195,23 @@
 </section>
 </main>
 <footer><div class="wrap">
- <div>NexVita AI · unidade de inteligência artificial aplicada da NexVita<br>NexVita Consultoria e Gestão Ltda · CNPJ 63.708.491/0001-40 · São Paulo, SP</div>
- <div><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a> · <a href="privacidade/">Privacidade</a> · <a href="#" data-cookies>Cookies</a></div>
+ <div><a class="marca" href="./" aria-label="NexVita AI, início">NexVita <b>AI</b></a><p>Automação e IA sob medida para empresas médias de São Paulo.</p><p>Unidade de inteligência artificial aplicada da NexVita.</p></div>
+ <div><h4>Contato</h4><ul>
+  <li><a data-wa="rodape" href="https://wa.me/5511948818000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20NexVita%20AI%20(inicio)%20e%20quero%20conversar%20sobre%20um%20processo%20da%20minha%20empresa." target="_blank" rel="noopener">WhatsApp +55 11 94881-8000</a></li>
+  <li><a href="mailto:contato@nexvita.ai">contato@nexvita.ai</a></li>
+  <li>Av. Dr. Cardoso de Melo, 1450<br>Vila Olímpia, São Paulo, SP</li>
+ </ul></div>
+ <div><h4>Páginas</h4><ul>
+  <li><a href="sob-medida/">Automação sob medida</a></li>
+  <li><a href="whatsapp/">Atendimento e vendas</a></li>
+  <li><a href="backoffice/">Back-office</a></li>
+  <li><a href="diagnostico/">Diagnóstico</a></li>
+  <li><a href="privacidade/">Privacidade</a> · <a href="#" data-cookies>Cookies</a></li>
+ </ul></div>
+ <div class="legal"><span>NexVita Consultoria e Gestão Ltda · CNPJ 63.708.491/0001-40</span><span>© 2026 NexVita AI</span></div>
 </div></footer>
 <script src="assets/consent.js" defer></script>
 <script src="assets/site.js?v=20261009" defer></script>
+<script src="assets/motion.js?v=20261014" defer></script>
 </body>
 </html>
