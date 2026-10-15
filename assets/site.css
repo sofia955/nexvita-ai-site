@@ -510,3 +510,9 @@ input:focus,select:focus,textarea:focus{border-color:var(--petroleo-3);box-shado
 .socio span{display:block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--petroleo-3);margin:4px 0 10px}
 .socio p{color:var(--cinza);font-size:15.5px;margin:0 0 12px}
 @media (max-width:560px){.socios{grid-template-columns:1fr}.socio .ph{aspect-ratio:4/4.4}}
+
+/* preço de lançamento */
+.preco-lanc{margin:22px 0 0;padding:18px 22px;border-left:2px solid var(--dourado);background:#fff;font-size:17px;color:var(--tinta);line-height:1.5}
+.preco-lanc strong{font-family:var(--serif);font-weight:400;font-size:28px;color:var(--petroleo)}
+.preco-lanc span{color:var(--dourado-2);margin:0 4px}
+.preco-lanc small{display:block;margin-top:6px;font-size:14px;color:var(--cinza)}
