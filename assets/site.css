@@ -497,3 +497,16 @@ input:focus,select:focus,textarea:focus{border-color:var(--petroleo-3);box-shado
 
 .flutua.f2{top:auto;bottom:46%}
 @media (max-width:960px){.flutua.f2{top:auto;bottom:52%}}
+
+/* sócios */
+.socios-secao{padding-top:0}
+.socios{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.socio{margin:0}
+.socio .ph{aspect-ratio:4/5;overflow:hidden;border-radius:var(--raio);background:var(--bege-2)}
+.socio img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .9s var(--ease)}
+.socio:hover img{transform:scale(1.03)}
+.socio figcaption{padding-top:18px}
+.socio b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;color:var(--petroleo)}
+.socio span{display:block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--petroleo-3);margin:4px 0 10px}
+.socio p{color:var(--cinza);font-size:15.5px;margin:0 0 12px}
+@media (max-width:560px){.socios{grid-template-columns:1fr}.socio .ph{aspect-ratio:4/4.4}}
